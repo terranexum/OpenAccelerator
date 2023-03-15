@@ -1,9 +1,30 @@
 import spacy
+import os
 import sys
+import textract
+import re
+import urllib.request
 from collections import defaultdict
 from plantweb.render import render
-import opennre
-model = opennre.get_model('wiki80_cnn_softmax')
+from spacy.matcher import Matcher
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
+'''
+pip install spacy
+pip install pdfminer.six # to replace pdftotext in textract
+pip install textract
+python -m spacy download en_core_web_sm
+pip install plantweb
+pip install python-dotenv
+Tesseract: https://github.com/UB-Mannheim/tesseract/wiki (for Windows)
+
+
+set up .env file with DIR_PATH variable going to the io/input folder in this repo
+
+'''
 
 # https://towardsdatascience.com/from-text-to-knowledge-the-information-extraction-pipeline-b65e7e30273e
 
@@ -11,10 +32,66 @@ import pandas as pd
 pd.set_option('max_colwidth', 2000)
 pd.options.display.max_rows = 500
 
-nlp = spacy.load('en_core_web_lg')
+# Set the directory path to search
+DIR_PATH = os.getenv('DIR_PATH')
+
+nlp = spacy.load('en_core_web_sm')
+
+text = ''
+
+# Loop through all files in the directory
+for root, dirs, files in os.walk(DIR_PATH):
+    for file in files:
+        # Check if the file has a .xls extension
+        if file.endswith('.pdf'):
+
+            # Get the full path to the file
+            file_path = os.path.join(root, file)
+            print(file_path)
+
+            # Extract text from the document using textract
+            text = textract.process(file_path, language='en')
+            
+            # Create a new PDF with reportlab
+            #pdf_path = os.path.splitext(file_path)[0] + '.pdf'
+
+            #if os.path.exists(pdf_path): os.remove(pdf_path) 
+
+
+# Download the document from the URL
+#url = 'https://www.example.com/document.pdf'
+#urllib.request.urlretrieve(url, 'document.pdf')
+
+# Extract text from the document using textract
+#text = textract.process('City of Denver 2021.pdf')
+
+# Find titles using regular expressions
+titles = re.findall(r'\n\s*[A-Z][A-Za-z0-9\s]+[.:]', text.decode('utf-8'))
+
+# Print the titles
+print(titles)
+
+sys.exit(1)
+
+# Define the pattern for section titles
+section_title_pattern = [
+    {"TEXT": {"REGEX": "^(Introduction|Background|Methodology|Results|Conclusion)$"}}
+]
+
+matcher = Matcher(nlp.vocab)
+matcher.add("SectionTitle", None, section_title_pattern)
+
 
 # Read the text file
 doc = nlp(open('example.txt', encoding="utf8").read())
+matches = matcher(doc)
+
+
+# Print the section titles and their start and end positions
+for match_id, start, end in matches:
+    section_title = doc[start:end].text
+    print(f"Section title: {section_title}, start: {start}, end: {end}")
+
 
 
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
