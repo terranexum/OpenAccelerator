@@ -67,23 +67,41 @@ for root, dirs, files in os.walk(DIR_PATH):
 
 # Find titles using regular expressions
 titles = re.findall(r'\n\s*[A-Z][A-Za-z0-9\s]+[.:]', text.decode('utf-8'))
+titles = [t.replace("\n", "") for t in titles]
+titles = [t.replace("\r", "") for t in titles]
+titles = [t.replace("\x0c", "") for t in titles]
 
 # Print the titles
-print(titles)
+#print(titles)
 
-sys.exit(1)
+#title_strs = '|'.join([t for t in titles])
+#print(title_strs)
 
 # Define the pattern for section titles
-section_title_pattern = [
-    {"TEXT": {"REGEX": "^(Introduction|Background|Methodology|Results|Conclusion)$"}}
-]
+#section_title_pattern = [
+#    {"TEXT": {title_strs}}
+#]
+
+#print(section_title_pattern)
 
 matcher = Matcher(nlp.vocab)
-matcher.add("SectionTitle", None, section_title_pattern)
 
+# Define a pattern to match sentences containing "title"
+#pattern = [{"LOWER": {"IN": ["title"]}}, {"IS_PUNCT": True, "OP": "?"}, {"POS": "ADJ", "OP": "*"}, {"POS": "NOUN", "OP": "+"}]
+
+#section_title_pattern = [{"label": "SECTION_TITLE", "pattern": pattern} for pattern in patterns]
+
+# Create a pattern for the matcher using the section titles
+#for sent in titles:
+patterns = list([{"TEXT": sent} for sent in titles])
+
+print(patterns)
+#sys.exit(1)
+matcher.add('SENTENCES', patterns)
 
 # Read the text file
-doc = nlp(open('example.txt', encoding="utf8").read())
+#doc = nlp(open('example.txt', encoding="utf8").read())
+doc = nlp(text)
 matches = matcher(doc)
 
 
