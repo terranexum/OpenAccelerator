@@ -1,0 +1,86 @@
+{
+    "title": "OpenAccelerator Demo",
+    "graphData": {
+        "nodes": [
+            {
+                "data": {
+                    "id": "Add the following snippet to your HTML: Thursday is a prototype direct air capture (DAC) machine developed by Nairobi-based Octavia Carbon that removes carbon from the air.",
+                    "zone": "#1f3e38"
+                }
+            },
+            {
+                "data": {
+                    "id": " It's 'thermal-swing' amine- based sorbet absorbs and desorbs CO2 using thermal energy that is produced through electrical resistance.",
+                    "zone": "#0b2a36"
+                }
+            },
+            {
+                "data": {
+                    "id": "0",
+                    "zone": "#1f3e38",
+                    "fname": "Add the following snippet to your HTML: Thursday is a prototype direct air capture (DAC) machine developed by Nairobi-based Octavia Carbon that removes carbon from the air.",
+                    "parent": "Add the following snippet to your HTML: Thursday is a prototype direct air capture (DAC) machine developed by Nairobi-based Octavia Carbon that removes carbon from the air.",
+                    "info": "Add the following snippet to your HTML: Thursday is a prototype direct air capture (DAC) machine developed by Nairobi-based Octavia Carbon that removes carbon from the air. Read up about this project on  Thursday is a prototype direct air capture (DAC) machine developed by Nairobi-based Octavia Carbon that removes carbon from the air.   Thursday is a direct air capture (DAC) prototype that removes carbon from the ambient air. It was developed by the engineering team at Octavia Carbon, Africa's first DAC startup based in Nairobi, Kenya. First constructed in summer 2022 the Thursday prototype is rated to remove approximately 1 metric ton of CO2 from the air per year. "
+                }
+            },
+            {
+                "data": {
+                    "id": "1",
+                    "zone": "#0b2a36",
+                    "fname": " It's 'thermal-swing' amine- based sorbet absorbs and desorbs CO2 using thermal energy that is produced through electrical resistance.",
+                    "parent": " It's 'thermal-swing' amine- based sorbet absorbs and desorbs CO2 using thermal energy that is produced through electrical resistance.",
+                    "info": " It's 'thermal-swing' amine- based sorbet absorbs and desorbs CO2 using thermal energy that is produced through electrical resistance. The OpenAir Collective aims to continuously improve, optimize and evolve the Thursday design to enable creators of all kinds around the globe to experiment with and deploy DAC for a variety of applications.       Mike Bwondera, Duncan Kariuki Hackster.io, an Avnet Community \u00a9 2023 . . "
+                }
+            }
+        ],
+        "edges": [
+            {
+                "data": {
+                    "id": "edge0",
+                    "source": "1",
+                    "target": "0"
+                }
+            },
+            {
+                "data": {
+                    "id": "edge1",
+                    "source": "0",
+                    "target": "1"
+                }
+            }
+        ]
+    },
+    "stepData": [
+        {
+            "id": "0",
+            "type": "single",
+            "nodes": [
+                "0"
+            ],
+            "steps": [],
+            "description": "Add the following snippet to your HTML: Thursday is a prototype direct air capture (DAC) machine developed by Nairobi-based Octavia Carbon that removes carbon from the air. Read up about this project on  Thursday is a prototype direct air capture (DAC) machine developed by Nairobi-based Octavia Carbon that removes carbon from the air.   Thursday is a direct air capture (DAC) prototype that removes carbon from the ambient air. It was developed by the engineering team at Octavia Carbon, Africa's first DAC startup based in Nairobi, Kenya. First constructed in summer 2022 the Thursday prototype is rated to remove approximately 1 metric ton of CO2 from the air per year. "
+        },
+        {
+            "id": "1",
+            "type": "single",
+            "nodes": [
+                "0",
+                "1"
+            ],
+            "steps": [],
+            "description": " It's 'thermal-swing' amine- based sorbet absorbs and desorbs CO2 using thermal energy that is produced through electrical resistance. The OpenAir Collective aims to continuously improve, optimize and evolve the Thursday design to enable creators of all kinds around the globe to experiment with and deploy DAC for a variety of applications.       Mike Bwondera, Duncan Kariuki Hackster.io, an Avnet Community \u00a9 2023 . . "
+        }
+    ],
+    "zoneData": [
+        {
+            "name": "Add the following snippet to your HTML: Thursday is a prototype direct air capture (DAC) machine developed by Nairobi-based Octavia Carbon that removes carbon from the air.",
+            "color": "#cccccc",
+            "baseColor": "#1f3e38"
+        },
+        {
+            "name": " It's 'thermal-swing' amine- based sorbet absorbs and desorbs CO2 using thermal energy that is produced through electrical resistance.",
+            "color": "#cccccc",
+            "baseColor": "#0b2a36"
+        }
+    ]
+}

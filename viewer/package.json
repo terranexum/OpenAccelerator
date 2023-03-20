@@ -1,0 +1,45 @@
+{
+  "private": true,
+  "name": "openviewer",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "preact build --no-prerender",
+    "serve": "sirv build --port 8080 --cors --single",
+    "dev": "preact watch",
+    "lint": "eslint src",
+    "deploy": "gh-pages -d build",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "preact",
+    "ignorePatterns": [
+      "build/"
+    ]
+  },
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "cytoscape": "^3.23.0",
+    "cytoscape-dagre": "^2.5.0",
+    "cytoscape-popper": "^2.0.0",
+    "cytoscape-navigator": "^2.0.2",
+    "dagre": "^0.8.5",
+    "preact": "^10.13.1",
+    "preact-render-to-string": "^5.2.6",
+    "preact-router": "^4.1.0",
+    "tippy.js": "^6.3.7"
+  },
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "<rootDir>/.publish/"
+    ],
+    "preset": "jest-preset-preact",
+    "setupFiles": [
+      "<rootDir>/tests/__mocks__/browserMocks.js",
+      "<rootDir>/tests/__mocks__/setupTests.js"
+    ],
+    "transform": {
+      "\\.adoc$": "jest-raw-loader"
+    }
+  }
+}
