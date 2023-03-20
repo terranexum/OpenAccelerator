@@ -4,7 +4,7 @@ This Python code is designed to help increase the adoption of open hardware by m
 
 This code is under development: as of March 20, 2023, text can be extracted from hardcoded URLs, topics are automatically generated for the logical divisions of content within the retrieved text, and the divisions organized accordingly into nodes that can be outputted into a diagram. The linking is still being worked on; it will be repaired in the next version.
 
-![OpenAccelerator Demo]("viewer/openviewer/src/assets/OpenAccelerator_v1.jpg")
+![OpenAccelerator Demo]("https://github.com/terranexum/OpenAccelerator/blob/main/viewer/openviewer/src/assets/OpenAccelerator_v1.jpg")
 
 ## Usage Example
 
