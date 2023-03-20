@@ -92,4 +92,4 @@ To contribute to this repository, you can follow these steps:
 
 ## Free and Open Source
 
-This is an open source project released under the Apache 2.0 license. A license file will be added in the near future. Collaborators and derivative projects are welcomed. 
+This is an open source project. Collaborators and derivative projects are welcomed. 
