@@ -54,13 +54,13 @@ Run the following command to go into the `openviewer` directory:
   `cd openviewer`
 
 To start a development live-reload server:
-  npm run dev
+  `npm run dev`
 
-To create a production build (in ./build):
-  npm run build
+To create a production build (in `./build`):
+  `npm run build`
 
 To start a production HTTP/2 server:
-  npm run serve
+  `npm run serve`
 
 ## Installation Notes
 
@@ -71,6 +71,12 @@ The `viewer` folder contains a folder called `openviewer` that was created with 
 `npx preact-cli create default openviewer`
 
 After this command was run, in the `package.json` belonging to `openviewer`, the text `NODE_OPTIONS=--openssl-legacy-provider` needed to be removed from `scripts/build` and `scripts/dev`.
+
+## How to Use the OpenViewer
+
+To zoom in on really large diagrams, use the navigation window on the lower left of the screen.  Mousing oer it and using the scroll wheel to zoom has been tested.
+
+This code is still under development, thus, the text in each diagram node is not in the correct logical groupings just yet. Also, diagram nodes do not presently allow the text at right to be highlighted, although when clicking on the text at the right, the reverse is true.
 
 ## How to Contribute
 
