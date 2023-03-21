@@ -33,9 +33,9 @@ pd.set_option('max_colwidth', 2000)
 pd.options.display.max_rows = 500
 
 # Set the directory path to search
-DIR_PATH = os.getenv('DIR_PATH')
+DIR_PATH = os.getenv("DIR_PATH")
 
-nlp = spacy.load('en_core_web_sm')
+nlp = spacy.load('en_core_web_lg')
 
 text = ''
 
