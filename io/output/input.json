@@ -1,0 +1,160 @@
+{
+    "title": "OpenAccelerator Demo",
+    "graphData": {
+        "nodes": [
+            {
+                "data": {
+                    "id": "At this time, we are presenting facts and figures for decarbonizing just electricity consumption through the use of new renewable energy production and energy storage systems.",
+                    "zone": "#2a4538"
+                }
+            },
+            {
+                "data": {
+                    "id": "To transition to 100 percent renewable energy, it would require 968,603 Prime Mover systems to provide enough electricity for all residential and commercial customers in the City of Denver.",
+                    "zone": "#1a3a38"
+                }
+            },
+            {
+                "data": {
+                    "id": "For energy saving projects to be cash flow positive on day one with repayment periods of up to 25 years - it seems like this could change the game.",
+                    "zone": "#0e2e36"
+                }
+            },
+            {
+                "data": {
+                    "id": "We work to accelerate the energy and carbon transition by designing intelligent networks of systems able to advance sustainability and resilience.",
+                    "zone": "#0c2133"
+                }
+            },
+            {
+                "data": {
+                    "id": "0",
+                    "zone": "#2a4538",
+                    "fname": "At this time, we are presenting facts and figures for decarbonizing just electricity consumption through the use of new renewable energy production and energy storage systems.",
+                    "parent": "At this time, we are presenting facts and figures for decarbonizing just electricity consumption through the use of new renewable energy production and energy storage systems.",
+                    "info": "City of Denver\r\nMarch 12, 2023\r\n1\r\n\r\n\fTerraNexum's goal is to develop and help implement accelerated plans for renewable energy and energy storage deployment to achieve profitable emissions reduction at city and county levels - at the scale of multiple megatons of CO2 emissions reductions.\r\n\r\nOur ASAPs outline goals and strategies for achieving a complete shift to renewable energy on an accelerated timeline. At this time, we are presenting facts and figures for decarbonizing just electricity consumption through the use of new renewable energy production and energy storage systems.\r\n2\r\n\r\n\fThe numbers below were supplied from the 2021 Community Energy Report for the City of Denver, published by Xcel Energy and freely available on its website. A copy of this report is also available in our same GitHub repository folder where this ASAP was published.\r\nThe potential is high for City of Denver to achieve rapid emissions reductions.\r\n\r\nNumber of Customers Total kWh Consumed Total Cost of Electricity Total CO2 Emissions\r\n\r\nCommercial\r\n34,882 5,047,304,327 $482,448,095.29 2,407,564\r\n\r\nResidential\r\n317,306 2,023,494,181 $252,755,183.89 965,206\r\n\r\n3\r\n\r\n\fOur Prime Mover program offers a highly affordable means for commercial and industrial building owners to benefit from lower electric bills in the process of becoming more sustainable and energy resilient. "
+                }
+            },
+            {
+                "data": {
+                    "id": "1",
+                    "zone": "#1a3a38",
+                    "fname": "To transition to 100 percent renewable energy, it would require 968,603 Prime Mover systems to provide enough electricity for all residential and commercial customers in the City of Denver.",
+                    "parent": "To transition to 100 percent renewable energy, it would require 968,603 Prime Mover systems to provide enough electricity for all residential and commercial customers in the City of Denver.",
+                    "info": " Our system of the same name consists of least one solar canopy and a battery energy storage unit. Not only is greater sustainability and resilience the result, market growth also results, fueling the need for more electricians, EV charging stations, and more EVs in general.\r\nThis is made possible by Colorado's C-PACE, an innovative program that offers financing of up to 30 percent of a building's value, and assesses those repayments on the annual property tax for that property for up to 25 years. This financing is in addition to tax credits and incentives at federal, state, and local levels.\r\n\r\nCommercial Savings\r\n\r\nAmount\r\n\r\nMonthly Electric Bill Today\r\n\r\n$1152.57\r\n\r\nMonthly Electric Bill after Prime Mover $230.51\r\n\r\nMonthly Cost Savings\r\n\r\n$922.06\r\n\r\nYearly Cost Savings\r\n\r\n$11064.69\r\n\r\nResidential Savings\r\n\r\nAmount\r\n\r\nMonthly Electric Bill Today\r\n\r\n$66.38\r\n\r\nMonthly Electric Bill after Prime Mover $13.28\r\n\r\nMonthly Cost Savings\r\n\r\n$53.10\r\n\r\nYearly Cost Savings\r\n\r\n$637.25\r\n\r\n4\r\n\r\n\fA single Prime Mover system costs $49,728.40. To transition to 100 percent renewable energy, it would require 968,603 Prime Mover systems to provide enough electricity for all residential and commercial customers in the City of Denver. "
+                }
+            },
+            {
+                "data": {
+                    "id": "2",
+                    "zone": "#0e2e36",
+                    "fname": "For energy saving projects to be cash flow positive on day one with repayment periods of up to 25 years - it seems like this could change the game.",
+                    "parent": "For energy saving projects to be cash flow positive on day one with repayment periods of up to 25 years - it seems like this could change the game.",
+                    "info": " This would cost $48,167,077,425.20 to implement. With the energy savings Prime Mover owners would see by generating and storing their own electricity, which is $11,701.94 per year per system and thus $11,334,535,812.53 per year across all systems within the City of Denver, the Prime Mover systems could pay for themselves in 4.25 years.\r\nThis is, of course, too long for businesses to wait to be cash flow positive.\r\nFor energy saving projects to be cash flow positive on day one with repayment periods of up to 25 years - it seems like this could change the game.\r\nIt already has. Within Colorado alone, 118 such projects have been financed through C-PACE, resulting in 781,603 tons of lifetime GHG emissions reduction and $77.9M of lifetime cost savings. Projects have been as small as $53K to as large as $55.5M.\r\n5\r\n\r\n\fC-PACE (Colorado Property Assessed Clean Energy) is an innovative financing program for projects in renewable energy, energy efficiency, and water conservation, to include both retrofits as well as new construction. Projects are financed through private capital and the program was designed to be selfsustaining.\r\nThe Rocky Mountain Institute (RMI) in February 2020 reported that financed projects offered a 15 percent or greater savings with bundled low and no cost improvements, a 35 percent savings with capital improvements, NOI (net operating income) increases between 2.4 and 5.6%, and property value increases between $5 and $11 per SF. Thus, for a 50,000 SF building, a building owner could see $250,000 to $550,000 in increased value.\r\nThe benefits: 1) 100 percent financing - no out-of-pocket expenses, 2) is long-term, up to 25 years at a fixed interest rate, and 3) financing is done through a special purpose tax assessment on a property, such that C-PACE payments get paid annually through the property tax bill. "
+                }
+            },
+            {
+                "data": {
+                    "id": "3",
+                    "zone": "#0c2133",
+                    "fname": "We work to accelerate the energy and carbon transition by designing intelligent networks of systems able to advance sustainability and resilience.",
+                    "parent": "We work to accelerate the energy and carbon transition by designing intelligent networks of systems able to advance sustainability and resilience.",
+                    "info": " The repayment obligation is transferrable to new building owners upon sale of the property, and no personal guarantees or positive cash flow are required to secure this financing. If you have tenants or hotel guests, the tax assessment can be passed through to them.\r\nThe goal of C-PACE is for energy savings to be greater than the PACE payments, enabling cash flow positive projects from day one.\r\n6\r\n\r\n\fOur name, TerraNexum, means 'earth network.' We work to accelerate the energy and carbon transition by designing intelligent networks of systems able to advance sustainability and resilience. We develop these systems through applying our extensive knowledge in managing energy, carbon, and other resources, and we design optimized networks to aid in energy, resource, and information flows using the tools of quantum optimization, geospatial and subsurface analytics, and cloud computing.\r\nOur energy and carbon management partners are in all major stakeholder areas, from renewable energy production and storage to electric utilities, companies who wish to remove carbon from the atmosphere, even companies wishing to renovate old oil/gas reservoirs to provide clean, large-scale utility storage of renewable energy. Wherever energy and carbon intersect, there is a point on our network to integrate that work.\r\nOur technology partners include businesses within cloud computing and quantum computing. We are participants within NVIDIA's Inception Program, Microsoft's Startups Hub, and AWS Activate. Our community partners include universities and groups able to benefit from the free and open-source, open-hardware work we do and seek to continue to do. We are seeking to help local universities within Colorado raise $30M for both quantum and sustainability R&D and workforce development.\r\nOur next step, with the data and results provided in this report, is to create a detailed geospatial visualization of how City of Denver can be serviced over time to reach 100 percent enewable energy over various timeframes. Watch how the energy transition could unfold, through monthly snapshots into the future.\r\nFor additional information on any of the above and for references for your further outreach, please reach out.\r\n7\r\n\r\n\fFor Prime Mover Program inquiries, please contact Dahl Winters, CEO at TerraNexum, at dwinters@terranexum.com.\r\n\r\nFor C-PACE inquiries, please contact Tracy Phillips, the Program Director at C-PACE, at tphillips@copace.com, 720-933-8143.\r\n\r\n8\r\n\r\n\f. . "
+                }
+            }
+        ],
+        "edges": [
+            {
+                "data": {
+                    "id": "edge0",
+                    "source": "1",
+                    "target": "0"
+                }
+            },
+            {
+                "data": {
+                    "id": "edge1",
+                    "source": "2",
+                    "target": "1"
+                }
+            },
+            {
+                "data": {
+                    "id": "edge2",
+                    "source": "1",
+                    "target": "2"
+                }
+            },
+            {
+                "data": {
+                    "id": "edge3",
+                    "source": "0",
+                    "target": "3"
+                }
+            }
+        ]
+    },
+    "stepData": [
+        {
+            "id": "0",
+            "type": "single",
+            "nodes": [
+                "0"
+            ],
+            "steps": [],
+            "description": "City of Denver\r\nMarch 12, 2023\r\n1\r\n\r\n\fTerraNexum's goal is to develop and help implement accelerated plans for renewable energy and energy storage deployment to achieve profitable emissions reduction at city and county levels - at the scale of multiple megatons of CO2 emissions reductions.\r\n\r\nOur ASAPs outline goals and strategies for achieving a complete shift to renewable energy on an accelerated timeline. At this time, we are presenting facts and figures for decarbonizing just electricity consumption through the use of new renewable energy production and energy storage systems.\r\n2\r\n\r\n\fThe numbers below were supplied from the 2021 Community Energy Report for the City of Denver, published by Xcel Energy and freely available on its website. A copy of this report is also available in our same GitHub repository folder where this ASAP was published.\r\nThe potential is high for City of Denver to achieve rapid emissions reductions.\r\n\r\nNumber of Customers Total kWh Consumed Total Cost of Electricity Total CO2 Emissions\r\n\r\nCommercial\r\n34,882 5,047,304,327 $482,448,095.29 2,407,564\r\n\r\nResidential\r\n317,306 2,023,494,181 $252,755,183.89 965,206\r\n\r\n3\r\n\r\n\fOur Prime Mover program offers a highly affordable means for commercial and industrial building owners to benefit from lower electric bills in the process of becoming more sustainable and energy resilient. "
+        },
+        {
+            "id": "1",
+            "type": "single",
+            "nodes": [
+                "2",
+                "1"
+            ],
+            "steps": [],
+            "description": " Our system of the same name consists of least one solar canopy and a battery energy storage unit. Not only is greater sustainability and resilience the result, market growth also results, fueling the need for more electricians, EV charging stations, and more EVs in general.\r\nThis is made possible by Colorado's C-PACE, an innovative program that offers financing of up to 30 percent of a building's value, and assesses those repayments on the annual property tax for that property for up to 25 years. This financing is in addition to tax credits and incentives at federal, state, and local levels.\r\n\r\nCommercial Savings\r\n\r\nAmount\r\n\r\nMonthly Electric Bill Today\r\n\r\n$1152.57\r\n\r\nMonthly Electric Bill after Prime Mover $230.51\r\n\r\nMonthly Cost Savings\r\n\r\n$922.06\r\n\r\nYearly Cost Savings\r\n\r\n$11064.69\r\n\r\nResidential Savings\r\n\r\nAmount\r\n\r\nMonthly Electric Bill Today\r\n\r\n$66.38\r\n\r\nMonthly Electric Bill after Prime Mover $13.28\r\n\r\nMonthly Cost Savings\r\n\r\n$53.10\r\n\r\nYearly Cost Savings\r\n\r\n$637.25\r\n\r\n4\r\n\r\n\fA single Prime Mover system costs $49,728.40. To transition to 100 percent renewable energy, it would require 968,603 Prime Mover systems to provide enough electricity for all residential and commercial customers in the City of Denver. "
+        },
+        {
+            "id": "2",
+            "type": "single",
+            "nodes": [
+                "1",
+                "2"
+            ],
+            "steps": [],
+            "description": " This would cost $48,167,077,425.20 to implement. With the energy savings Prime Mover owners would see by generating and storing their own electricity, which is $11,701.94 per year per system and thus $11,334,535,812.53 per year across all systems within the City of Denver, the Prime Mover systems could pay for themselves in 4.25 years.\r\nThis is, of course, too long for businesses to wait to be cash flow positive.\r\nFor energy saving projects to be cash flow positive on day one with repayment periods of up to 25 years - it seems like this could change the game.\r\nIt already has. Within Colorado alone, 118 such projects have been financed through C-PACE, resulting in 781,603 tons of lifetime GHG emissions reduction and $77.9M of lifetime cost savings. Projects have been as small as $53K to as large as $55.5M.\r\n5\r\n\r\n\fC-PACE (Colorado Property Assessed Clean Energy) is an innovative financing program for projects in renewable energy, energy efficiency, and water conservation, to include both retrofits as well as new construction. Projects are financed through private capital and the program was designed to be selfsustaining.\r\nThe Rocky Mountain Institute (RMI) in February 2020 reported that financed projects offered a 15 percent or greater savings with bundled low and no cost improvements, a 35 percent savings with capital improvements, NOI (net operating income) increases between 2.4 and 5.6%, and property value increases between $5 and $11 per SF. Thus, for a 50,000 SF building, a building owner could see $250,000 to $550,000 in increased value.\r\nThe benefits: 1) 100 percent financing - no out-of-pocket expenses, 2) is long-term, up to 25 years at a fixed interest rate, and 3) financing is done through a special purpose tax assessment on a property, such that C-PACE payments get paid annually through the property tax bill. "
+        },
+        {
+            "id": "3",
+            "type": "single",
+            "nodes": [
+                "0",
+                "3"
+            ],
+            "steps": [],
+            "description": " The repayment obligation is transferrable to new building owners upon sale of the property, and no personal guarantees or positive cash flow are required to secure this financing. If you have tenants or hotel guests, the tax assessment can be passed through to them.\r\nThe goal of C-PACE is for energy savings to be greater than the PACE payments, enabling cash flow positive projects from day one.\r\n6\r\n\r\n\fOur name, TerraNexum, means 'earth network.' We work to accelerate the energy and carbon transition by designing intelligent networks of systems able to advance sustainability and resilience. We develop these systems through applying our extensive knowledge in managing energy, carbon, and other resources, and we design optimized networks to aid in energy, resource, and information flows using the tools of quantum optimization, geospatial and subsurface analytics, and cloud computing.\r\nOur energy and carbon management partners are in all major stakeholder areas, from renewable energy production and storage to electric utilities, companies who wish to remove carbon from the atmosphere, even companies wishing to renovate old oil/gas reservoirs to provide clean, large-scale utility storage of renewable energy. Wherever energy and carbon intersect, there is a point on our network to integrate that work.\r\nOur technology partners include businesses within cloud computing and quantum computing. We are participants within NVIDIA's Inception Program, Microsoft's Startups Hub, and AWS Activate. Our community partners include universities and groups able to benefit from the free and open-source, open-hardware work we do and seek to continue to do. We are seeking to help local universities within Colorado raise $30M for both quantum and sustainability R&D and workforce development.\r\nOur next step, with the data and results provided in this report, is to create a detailed geospatial visualization of how City of Denver can be serviced over time to reach 100 percent enewable energy over various timeframes. Watch how the energy transition could unfold, through monthly snapshots into the future.\r\nFor additional information on any of the above and for references for your further outreach, please reach out.\r\n7\r\n\r\n\fFor Prime Mover Program inquiries, please contact Dahl Winters, CEO at TerraNexum, at dwinters@terranexum.com.\r\n\r\nFor C-PACE inquiries, please contact Tracy Phillips, the Program Director at C-PACE, at tphillips@copace.com, 720-933-8143.\r\n\r\n8\r\n\r\n\f. . "
+        }
+    ],
+    "zoneData": [
+        {
+            "name": "At this time, we are presenting facts and figures for decarbonizing just electricity consumption through the use of new renewable energy production and energy storage systems.",
+            "color": "#cccccc",
+            "baseColor": "#2a4538"
+        },
+        {
+            "name": "To transition to 100 percent renewable energy, it would require 968,603 Prime Mover systems to provide enough electricity for all residential and commercial customers in the City of Denver.",
+            "color": "#cccccc",
+            "baseColor": "#1a3a38"
+        },
+        {
+            "name": "For energy saving projects to be cash flow positive on day one with repayment periods of up to 25 years - it seems like this could change the game.",
+            "color": "#cccccc",
+            "baseColor": "#0e2e36"
+        },
+        {
+            "name": "We work to accelerate the energy and carbon transition by designing intelligent networks of systems able to advance sustainability and resilience.",
+            "color": "#cccccc",
+            "baseColor": "#0c2133"
+        }
+    ]
+}
