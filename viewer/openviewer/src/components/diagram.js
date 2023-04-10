@@ -7,11 +7,17 @@ import cydagre from 'cytoscape-dagre';
 import popper  from 'cytoscape-popper';
 import navigator from 'cytoscape-navigator';
 
+
+import cosebilkent from 'cytoscape-cose-bilkent';
+
+import cise from 'cytoscape-cise';
+
 import tippy from 'tippy.js';
 
 // import undoRedo from 'cytoscape-undo-redo';
 
-//import jquery from 'jquery';
+import jquery from 'jquery';
+import expandCollapse from 'cytoscape-expand-collapse';
 // import expandCollapse from 'cytoscape-expand-collapse';
 
 import { getCurrentStep } from '../utils/stepUtils'
@@ -19,11 +25,15 @@ import { getCurrentStep } from '../utils/stepUtils'
 cytoscape.use(cydagre);
 cytoscape.use(popper);
 navigator(cytoscape);
+//cytoscape.use(expandcollapse);
+cytoscape.use(cosebilkent);
+cytoscape.use(cise);
+
 
 // cydagre(cytoscape);
 
 // undoRedo(cytoscape);
-// expandCollapse(cytoscape, jquery);
+expandCollapse(cytoscape, jquery);
 
 export default class Diagram extends Component {
 
@@ -88,6 +98,8 @@ export default class Diagram extends Component {
     renderDiagram() {
         let that = this;
 
+        
+
         this.cy = null;
         this.cy = cytoscape({
             container: that.base,
@@ -98,14 +110,67 @@ export default class Diagram extends Component {
             userPanningEnabled: true,
             userZoomingEnabled: true,
 
-
             layout: {
-                name: 'dagre',
-                directed: false,
-                rankDir: 'TB',
+                name: 'cise', // was dagre
+                //directed: true,
+                //rankDir: 'TB',
                 // ranker: 'tight-tree'
-                animate: true,
-                animationDuration: 250
+                animate: false,
+                animationDuration: 250,
+                clusters: zones,
+                 // -------- Optional parameters --------
+                // Whether to animate the layout
+                // - true : Animate while the layout is running
+                // - false : Just show the end result
+                // - 'end' : Animate directly to the end result
+                //animate: false,
+                
+                // number of ticks per frame; higher is faster but more jerky
+                refresh: 10, 
+                
+                // Animation duration used for animate:'end'
+                //animationDuration: undefined,
+                
+                // Easing for animate:'end'
+                animationEasing: undefined,
+                
+                // Whether to fit the viewport to the repositioned graph
+                // true : Fits at end of layout for animate:false or animate:'end'
+                fit: true,
+                
+                // Padding in rendered co-ordinates around the layout
+                padding: 30,
+                
+                // separation amount between nodes in a cluster
+                // note: increasing this amount will also increase the simulation time 
+                nodeSeparation: 12.5,
+                
+                // Inter-cluster edge length factor 
+                // (2.0 means inter-cluster edges should be twice as long as intra-cluster edges)
+                idealInterClusterEdgeLengthCoefficient: 1.4,
+            
+                // Whether to pull on-circle nodes inside of the circle
+                allowNodesInsideCircle: false,
+                
+                // Max percentage of the nodes in a circle that can move inside the circle
+                maxRatioOfNodesInsideCircle: 0.1,
+                
+                // - Lower values give looser springs
+                // - Higher values give tighter springs
+                springCoeff: 0.45,
+                
+                // Node repulsion (non overlapping) multiplier
+                nodeRepulsion: 4500,
+                
+                // Gravity force (constant)
+                gravity: 0.25,
+                
+                // Gravity range (constant)
+                gravityRange: 3.8, 
+            
+                // Layout event callbacks; equivalent to `layout.one('layoutready', callback)` for example
+                ready: function(){}, // on layoutready
+                stop: function(){}, // on layoutstop
             },
 
             style: [
@@ -115,7 +180,7 @@ export default class Diagram extends Component {
                         'height': 125,
                         'width': 175,
                         'background-color': 'data(zone)',
-                        'color': '#cccccc',
+                        'color': '#333333',
                         'content': e => e.data('fname') ? e.data('fname') : '',
                         'text-valign': 'center',
                         'text-halign': 'center',
@@ -206,11 +271,95 @@ export default class Diagram extends Component {
                 },
             ],
 
+            defaultOptions: [ 
+            {
+                // Called on `layoutready`
+                ready: function () {
+                },
+                // Called on `layoutstop`
+                stop: function () {
+                },
+                // 'draft', 'default' or 'proof" 
+                // - 'draft' fast cooling rate 
+                // - 'default' moderate cooling rate 
+                // - "proof" slow cooling rate
+                quality: 'default',
+                // Whether to include labels in node dimensions. Useful for avoiding label overlap
+                nodeDimensionsIncludeLabels: true,
+                // number of ticks per frame; higher is faster but more jerky
+                refresh: 30,
+                // Whether to fit the network view after when done
+                fit: false,
+                // Padding on fit
+                padding: 10,
+                // Whether to enable incremental mode
+                randomize: true,
+                // Node repulsion (non overlapping) multiplier
+                nodeRepulsion: 4500,
+                // Ideal (intra-graph) edge length
+                idealEdgeLength: 500,
+                // Divisor to compute edge forces
+                edgeElasticity: 0.45,
+                // Nesting factor (multiplier) to compute ideal edge length for inter-graph edges
+                nestingFactor: 0.9,
+                // Gravity force (constant)
+                gravity: 0.25,
+                // Maximum number of iterations to perform
+                numIter: 2500,
+                // Whether to tile disconnected nodes
+                tile: true,
+                // Type of layout animation. The option set is {'during', 'end', false}
+                animate: 'end',
+                // Duration for animate:end
+                animationDuration: 500,
+                // Amount of vertical space to put between degree zero nodes during tiling (can also be a function)
+                tilingPaddingVertical: 10,
+                // Amount of horizontal space to put between degree zero nodes during tiling (can also be a function)
+                tilingPaddingHorizontal: 10,
+                // Gravity range (constant) for compounds
+                gravityRangeCompound: 1.5,
+                // Gravity force (constant) for compounds
+                gravityCompound: 1.0,
+                // Gravity range (constant)
+                gravityRange: 3.8,
+                // Initial cooling factor for incremental layout
+                initialEnergyOnIncremental: 0.5
+            }
+            ],
+
             elements: this.props.graphData
         });
 
         this.cy.fit(this.cy.elements(), 20);
         this.cy.center();
+
+        let options = {
+            layoutBy: null, // to rearrange after expand/collapse. It's just layout options or whole layout function. Choose your side!
+            // recommended usage: use cose-bilkent layout with randomize: false to preserve mental map upon expand/collapse
+            fisheye: true, // whether to perform fisheye view after expand/collapse you can specify a function too
+            animate: true, // whether to animate on drawing changes you can specify a function too
+            animationDuration: 1000, // when animate is true, the duration in milliseconds of the animation
+            ready: function () { }, // callback when expand/collapse initialized
+            undoable: true, // and if undoRedoExtension exists,
+      
+            cueEnabled: true, // Whether cues are enabled
+            expandCollapseCuePosition: 'top-left', // default cue position is top left you can specify a function per node too
+            expandCollapseCueSize: 12, // size of expand-collapse cue
+            expandCollapseCueLineSize: 8, // size of lines used for drawing plus-minus icons
+            expandCueImage: undefined, // image of expand icon if undefined draw regular expand cue
+            collapseCueImage: undefined, // image of collapse icon if undefined draw regular collapse cue
+            expandCollapseCueSensitivity: 1, // sensitivity of expand-collapse cues
+            edgeTypeInfo: "edgeType", // the name of the field that has the edge type, retrieved from edge.data(), can be a function, if reading the field returns undefined the collapsed edge type will be "unknown"
+            groupEdgesOfSameTypeOnCollapse : false, // if true, the edges to be collapsed will be grouped according to their types, and the created collapsed edges will have same type as their group. if false the collapased edge will have "unknown" type.
+            allowNestedEdgeCollapse: true, // when you want to collapse a compound edge (edge which contains other edges) and normal edge, should it collapse without expanding the compound first
+            zIndex: 999 // z-index value of the canvas in which cue ımages are drawn
+        };
+
+        
+
+        this.cy.expandCollapse(options);
+        let api = this.cy.expandCollapse('get');
+        //api.collapseAll(options);
 
         // the default values of each option are outlined below:
         var defaults = {
@@ -223,11 +372,17 @@ export default class Diagram extends Component {
           , rerenderDelay: 100 // ms to throttle rerender updates to the panzoom for performance
         };
         
-        var nav = this.cy.navigator( defaults ); // get navigator instance, nav
+        
+        
 
+        var nav = this.cy.navigator( defaults ); // get navigator instance, nav
 
         let nodes = this.cy.filter((ele, i, eles) => {
             return (ele.data('parent') != undefined);
+        })
+
+        let zones = this.cy.filter((ele, i, eles) => {
+            return (ele.data('zones') != undefined);
         })
 
         let popperNodes = this.cy.filter((ele, i, eles) => {

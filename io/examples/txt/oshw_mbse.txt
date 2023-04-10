@@ -1,0 +1,58 @@
+A report on how model-based systems engineering (MBSE) can promote the use of open hardware in academia
+
+1.	Introduction to OSHW:
+
+An overview of open hardware, including its benefits, challenges, and the current state of the field within academia.
+a.	The lack of widespread use of OSHW in academia is likely due to a lack of awareness of its contributions outside of academia to academically relevant fields, one of which is sustainability.
+b.	OSHW can leverage community involvement for improved hands-on learning experiences. It can 
+
+2.	Introduction to CSU Systems Engineering
+
+a.	Leadership in Systems Engineering – largest program at CSU
+b.	MBSE at CSU Systems Engineering - basic concepts, techniques, and tools using SysML
+c.	MBSE retooled to focus on relationship diagramming, to be more broadly applicable beyond systems engineering, while retaining the documentation simplification ability of MBSE which improves understanding of systems and subsystems, how they interact and interface with each other, and thus how they can interface with other systems to rapidly iterate and innovate on new designs.
+d.	Best Practices, which include:
+i.	Using a standard modeling language like SysML to ensure that the design is easily understood and modified by others.
+ii.	Documenting system requirements early in the design process and tracing those throughout the design and testing phases. This helps provide support when the system is validated, to ensure that it meets its intended goals.
+iii.	Using a modular design to make the system easy to modify and adapt to new uses. A modular design that separates the system into distinct components makes it easier to modify or replace individual components without affecting the rest of the system.
+iv.	Documenting the rationale behind design decisions, such as why a particular component or interface was chosen. This helps others to understand the design and to modify it for their own purposes.
+v.	Using version control: To keep track of design changes and to collaborate effectively with others, version control software such as Git is necessary. This helps to not only keep track of changes, but changes can be merged from multiple contributors, and rolled back if necessary.
+
+3.	Introduction to CSU’s Sustainability Efforts
+
+a.	Leadership in Sustainability – longest record of being a top 5 university in sustainability nationwide. 
+b.	Current Efforts – Renewable Energy, Concrete Carbon Storage (dissertation work)
+c.	Future Efforts – Quantum-Enhanced Efforts (using Quantum Sensing, Optimization, Materials Discovery) – Qcsu mentioned?
+
+
+4.	The Intersection of OSHW + MBSE
+
+MBSE has already been used in the past to successfully design, document, and test open hardware systems. 
+
+a.	The Raspberry Pi is a popular single-board computer that has been used in a wide range of applications, from home automation to scientific research. The Raspberry Pi Foundation used MBSE techniques to design the hardware, software, and documentation for the Raspberry Pi, which helped them to produce a low-cost, modular system that is easy to use and modify.
+b.	OpenROV is an open source underwater robot that can be used for scientific research, exploration, and education. The OpenROV team used MBSE techniques to design and document the hardware, software, and control systems for the robot, which helped them to produce a highly functional and customizable system that can be adapted to a wide range of applications.
+c.	ArduSat is a satellite platform that can be used for scientific research and education. The ArduSat team used MBSE techniques to design and document the hardware, software, and data acquisition systems for the satellite, which helped them to produce a flexible and modular system that can be adapted to a wide range of scientific experiments.
+
+5.	The Intersection of OSHW + Sustainability (OpenAir Collective)
+
+An area where OSHW has added great value to an area of strong academic interest is sustainability, to solve challenges such as improved environmental sensing and carbon dioxide removal. Below are case studies of open hardware projects that have successfully addressed sustainability challenges, as well as examples of how MBSE can be used to design sustainable open hardware systems.
+a.	OpenAir Collective: VIOLET Decarbonizer, CYAN Decarbonizer, Thursday (on Hackster.io)
+b.	Safecast: Safecast is an open hardware project that uses a network of radiation sensors to collect data on environmental radiation levels. The project was started in response to the Fukushima nuclear disaster in 2011, and has since expanded to cover other areas around the world. The sensors are based on open source designs and are built using off-the-shelf components, making them easy to reproduce and deploy in a wide range of environments.
+c.	AirCasting: AirCasting is an open hardware project that uses a wearable air quality monitor to collect data on air pollution. The project was started in response to the growing concern over air pollution in urban areas, and is designed to empower citizens to monitor and report air pollution levels in their communities. The AirCasting device is based on open source designs and can be built using off-the-shelf components.
+d.	Carbon Mineralization: Carbon Mineralization is an open hardware project that uses low-cost, open-source technology to capture and convert carbon dioxide into a stable mineral form. The project aims to address the challenge of reducing greenhouse gas emissions by providing a scalable and sustainable solution for carbon capture and storage.
+
+
+6.	The Intersection of OSHW + MBSE + Sustainability (this work)
+
+In this section, we provide reasons why MBSE can contribute valuably to the design of sustainable open hardware systems. MBSE can be used to design sustainable open hardware systems in a variety of ways, which include:
+a.	Designing modular systems that can be easily modified and adapted to different applications, reducing the need for new hardware designs and minimizing waste. 
+b.	Optimizing the energy efficiency of open hardware systems by modeling the energy consumption of different components and identifying ways to reduce energy usage. 
+c.	Optimizing the sustainability of open hardware supply chains by modeling the environmental impact of different manufacturing processes and identifying ways to reduce the carbon footprint of the production process.
+In general, the following benefits are possible by applying MBSE to develop and innovate on sustainable open hardware designs:
+Open hardware can facilitate the development and deployment of new renewable energy technologies, such as solar panels, wind turbines, and energy storage systems. By making designs and specifications freely available, open hardware can lower the barriers to entry for individuals and organizations looking to develop and commercialize these technologies.
+Relationship diagramming can be used to model complex systems and identify areas where improvements can be made to increase efficiency, reduce waste, and lower emissions. By creating detailed diagrams of energy systems, for example, it may be possible to identify areas where energy is being lost and design interventions to reduce this waste.
+MBSE, through SysML, can be used to model the energy system at a higher level, helping to identify dependencies and potential areas for optimization. By creating a model of the entire energy system, it may be possible to identify areas where small changes could have a significant impact on overall energy consumption and emissions.
+Open hardware can also help to reduce the environmental impact of manufacturing and production by enabling more efficient use of resources and reducing waste. By making hardware designs freely available, it may be possible to reduce the number of iterations required to develop a product and to minimize the use of materials and resources throughout the manufacturing process.
+Finally, open hardware can facilitate greater collaboration and knowledge-sharing between individuals and organizations working on renewable energy and carbon reduction initiatives. By enabling more people to contribute to the development and improvement of these technologies, it may be possible to accelerate the pace of innovation and make progress towards these goals more quickly.
+
+7.	Challenges and future directions: Address the challenges and future directions of open hardware and MBSE. This could include discussions of the current state of the field, potential future developments, and the role of academia in promoting the adoption of open hardware.

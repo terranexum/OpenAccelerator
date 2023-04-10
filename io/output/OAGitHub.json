@@ -5,61 +5,61 @@
             {
                 "data": {
                     "id": "DIY small-scale open hardware direct air carbon capture device called Cyan.",
-                    "zone": "#354b38"
+                    "zone": "#eff0f1"
                 }
             },
             {
                 "data": {
                     "id": "If nothing happens, download GitHub Desktop and try again.",
-                    "zone": "#2a4538"
+                    "zone": "#e7ebec"
                 }
             },
             {
                 "data": {
                     "id": "This portable system operates at a small enough scale to empower individuals to tangibly experience carbon removal.",
-                    "zone": "#214038"
+                    "zone": "#dfe6e8"
                 }
             },
             {
                 "data": {
                     "id": "The Cyan Assembly Instructions will get you started with an overview of how it works, a parts list, and instructions for putting it together.",
-                    "zone": "#1a3a38"
+                    "zone": "#d7e0e4"
                 }
             },
             {
                 "data": {
                     "id": "To report your modifications, experimental results, and feedback for making Cyan better, please visit the Cyan DataShare site.",
-                    "zone": "#143437"
+                    "zone": "#cedbdf"
                 }
             },
             {
                 "data": {
                     "id": "The input material, calcium hydroxide, can be found in any home improvement store as hydrated lime.",
-                    "zone": "#0e2e36"
+                    "zone": "#c6d5db"
                 }
             },
             {
                 "data": {
                     "id": "At present, a Cyan will remove over the course of 24 hours the same amount of CO2 emitted by running a 9-watt LED bulb for 3 hours.",
-                    "zone": "#0b2735"
+                    "zone": "#bed0d7"
                 }
             },
             {
                 "data": {
                     "id": "Cyan uses 1.5 watts of electricity to power the air pump which bubbles air through water and humidifies the calcium hydroxide, allowing CO2 to be absorbed.",
-                    "zone": "#0c2133"
+                    "zone": "#b6cbd3"
                 }
             },
             {
                 "data": {
                     "id": " A duty cycle of, say, 10 minutes on & 50 minutes off is possible and suggested for negative emissions (more CO2 removed than consumed by the air pump).",
-                    "zone": "#0f1a30"
+                    "zone": "#aec6cf"
                 }
             },
             {
                 "data": {
                     "id": "0",
-                    "zone": "#354b38",
+                    "zone": "#eff0f1",
                     "fname": "DIY small-scale open hardware direct air carbon capture device called Cyan.",
                     "parent": "DIY small-scale open hardware direct air carbon capture device called Cyan.",
                     "info": "DIY small-scale open hardware direct air carbon capture device called Cyan. "
@@ -68,7 +68,7 @@
             {
                 "data": {
                     "id": "1",
-                    "zone": "#2a4538",
+                    "zone": "#e7ebec",
                     "fname": "If nothing happens, download GitHub Desktop and try again.",
                     "parent": "If nothing happens, download GitHub Desktop and try again.",
                     "info": " Our documentation is on https://openair-collective.github.io/openair-cyan Use Git or checkout with SVN using the web URL. Work fast with our official CLI.\n      Learn more. Please\n                sign in\n                to use Codespaces. If nothing happens, download GitHub Desktop and try again. If nothing happens, download GitHub Desktop and try again. If nothing happens, download Xcode and try again. Your codespace will open once ready. "
@@ -77,7 +77,7 @@
             {
                 "data": {
                     "id": "2",
-                    "zone": "#214038",
+                    "zone": "#dfe6e8",
                     "fname": "This portable system operates at a small enough scale to empower individuals to tangibly experience carbon removal.",
                     "parent": "This portable system operates at a small enough scale to empower individuals to tangibly experience carbon removal.",
                     "info": " There was a problem preparing your codespace, please try again.   Welcome to the documentation for the Cyan Decarbonizer v.1, a DIY small-scale open hardware direct air carbon capture (DACC) system. To view our current development projects and how you can help, click Projects here or above. This portable system operates at a small enough scale to empower individuals to tangibly experience carbon removal. It is also designed to get people actively thinking and sharing their carbon footprint and their role in the carbon cycle. As cyanobacteria did with oxygen, the vision was that many of these small-scale DACC units might come to have a significant impact on atmospheric CO2 and thus climate change. If not directly due to their small size, then indirectly through the promotion of DACC as a technology and through the educational experience of using Cyan. The educational experience might be the biggest way that Cyan units will combat climate change. One can quickly see what CO2 emissions look like in trapped form, how much it weighs, and how long it takes to capture it. DACC starts to become a conversation point among friends and family. People start wanting to run Cyans to erase the emissions from their light bulbs, for example. "
@@ -86,7 +86,7 @@
             {
                 "data": {
                     "id": "3",
-                    "zone": "#1a3a38",
+                    "zone": "#d7e0e4",
                     "fname": "The Cyan Assembly Instructions will get you started with an overview of how it works, a parts list, and instructions for putting it together.",
                     "parent": "The Cyan Assembly Instructions will get you started with an overview of how it works, a parts list, and instructions for putting it together.",
                     "info": " And if they can neutralize those emissions, what\u2019s next? Household emissions? Should I buy a bigger DACC unit to cover my home\u2019s emissions? And so on. The Cyan Assembly Instructions will get you started with an overview of how it works, a parts list, and instructions for putting it together. All this information is also found on our Wiki. "
@@ -95,7 +95,7 @@
             {
                 "data": {
                     "id": "4",
-                    "zone": "#143437",
+                    "zone": "#cedbdf",
                     "fname": "To report your modifications, experimental results, and feedback for making Cyan better, please visit the Cyan DataShare site.",
                     "parent": "To report your modifications, experimental results, and feedback for making Cyan better, please visit the Cyan DataShare site.",
                     "info": " We now have a Cyan Q&A that goes over some common general and technical questions. The Supporting System Calculations describe the logic that went into designing the system, from a LCA/TEA perspective. The CO2 Capture Measurements describe results obtained so far on how well this system can perform. To report your modifications, experimental results, and feedback for making Cyan better, please visit the Cyan DataShare site. To see an overview of where we are with current progress, please view the Projects board. "
@@ -104,7 +104,7 @@
             {
                 "data": {
                     "id": "5",
-                    "zone": "#0e2e36",
+                    "zone": "#c6d5db",
                     "fname": "The input material, calcium hydroxide, can be found in any home improvement store as hydrated lime.",
                     "parent": "The input material, calcium hydroxide, can be found in any home improvement store as hydrated lime.",
                     "info": " Lastly, to view Cyan Project Progress updates on the OpenAir Forum, those are available here. The input material, calcium hydroxide, can be found in any home improvement store as hydrated lime. However, for Cyan to be carbon-negative the input must either be sourced from a low-carbon supplier or obtained from waste cement. The output material, calcium carbonate can be used in building materials (cement-lime) or as agricultural lime. Magnesium hydroxide is also an option for use as the input material. Though perhaps more expensive depending on the source, it is less alkaline than calcium hydroxide and has performed as well to slightly better than calcium hydroxide in carbon capture effectiveness in our Cyan tests. "
@@ -113,7 +113,7 @@
             {
                 "data": {
                     "id": "6",
-                    "zone": "#0b2735",
+                    "zone": "#bed0d7",
                     "fname": "At present, a Cyan will remove over the course of 24 hours the same amount of CO2 emitted by running a 9-watt LED bulb for 3 hours.",
                     "parent": "At present, a Cyan will remove over the course of 24 hours the same amount of CO2 emitted by running a 9-watt LED bulb for 3 hours.",
                     "info": " It can also be used to make tiles or blocks when mixed with cement and optionally biochar. We hope to have a low-carbon supplier later this year. At present, a Cyan will remove over the course of 24 hours the same amount of CO2 emitted by running a 9-watt LED bulb for 3 hours. That is 2 grams of CO2 for 10 grams of input material - or a 0.2:1 ratio. It is within theoretical possibility for this unit to remove the emissions of 20 9-watt LED bulbs for 3 hours (a whole house at night), that is 0.382 kg of CO2 that would need to be captured. "
@@ -122,7 +122,7 @@
             {
                 "data": {
                     "id": "7",
-                    "zone": "#0c2133",
+                    "zone": "#b6cbd3",
                     "fname": "Cyan uses 1.5 watts of electricity to power the air pump which bubbles air through water and humidifies the calcium hydroxide, allowing CO2 to be absorbed.",
                     "parent": "Cyan uses 1.5 watts of electricity to power the air pump which bubbles air through water and humidifies the calcium hydroxide, allowing CO2 to be absorbed.",
                     "info": " Adequate surface area needs to be provided within the unit to do this and we are presently working on that. The calcium hydroxide needs to be exposed to high humidity from between 3 to 16 hours to achieve a good level of carbonation. Keeping the electricity consumption low will ensure Cyan removes more CO2 than it emits through electricity use. Cyan uses 1.5 watts of electricity to power the air pump which bubbles air through water and humidifies the calcium hydroxide, allowing CO2 to be absorbed. However, the air pump does not need to be run continuously to maintain adequate humidification. "
@@ -131,7 +131,7 @@
             {
                 "data": {
                     "id": "8",
-                    "zone": "#0f1a30",
+                    "zone": "#aec6cf",
                     "fname": " A duty cycle of, say, 10 minutes on & 50 minutes off is possible and suggested for negative emissions (more CO2 removed than consumed by the air pump).",
                     "parent": " A duty cycle of, say, 10 minutes on & 50 minutes off is possible and suggested for negative emissions (more CO2 removed than consumed by the air pump).",
                     "info": " A duty cycle of, say, 10 minutes on & 50 minutes off is possible and suggested for negative emissions (more CO2 removed than consumed by the air pump). The fan uses 3 watts but only needs to be run intermittently to refresh the air inside the box. The fan is also useful to speed up dry time but this is not essential for operation. If you're going for negative emissions, air drying would really help unless you are using renewable energy to power your unit. Top DIY small-scale open hardware direct air carbon capture device called Cyan. Our documentation is on https://openair-collective.github.io/openair-cyan . . "
@@ -298,48 +298,48 @@
     "zoneData": [
         {
             "name": "DIY small-scale open hardware direct air carbon capture device called Cyan.",
-            "color": "#cccccc",
-            "baseColor": "#354b38"
+            "color": "#333333",
+            "baseColor": "#eff0f1"
         },
         {
             "name": "If nothing happens, download GitHub Desktop and try again.",
-            "color": "#cccccc",
-            "baseColor": "#2a4538"
+            "color": "#333333",
+            "baseColor": "#e7ebec"
         },
         {
             "name": "This portable system operates at a small enough scale to empower individuals to tangibly experience carbon removal.",
-            "color": "#cccccc",
-            "baseColor": "#214038"
+            "color": "#333333",
+            "baseColor": "#dfe6e8"
         },
         {
             "name": "The Cyan Assembly Instructions will get you started with an overview of how it works, a parts list, and instructions for putting it together.",
-            "color": "#cccccc",
-            "baseColor": "#1a3a38"
+            "color": "#333333",
+            "baseColor": "#d7e0e4"
         },
         {
             "name": "To report your modifications, experimental results, and feedback for making Cyan better, please visit the Cyan DataShare site.",
-            "color": "#cccccc",
-            "baseColor": "#143437"
+            "color": "#333333",
+            "baseColor": "#cedbdf"
         },
         {
             "name": "The input material, calcium hydroxide, can be found in any home improvement store as hydrated lime.",
-            "color": "#cccccc",
-            "baseColor": "#0e2e36"
+            "color": "#333333",
+            "baseColor": "#c6d5db"
         },
         {
             "name": "At present, a Cyan will remove over the course of 24 hours the same amount of CO2 emitted by running a 9-watt LED bulb for 3 hours.",
-            "color": "#cccccc",
-            "baseColor": "#0b2735"
+            "color": "#333333",
+            "baseColor": "#bed0d7"
         },
         {
             "name": "Cyan uses 1.5 watts of electricity to power the air pump which bubbles air through water and humidifies the calcium hydroxide, allowing CO2 to be absorbed.",
-            "color": "#cccccc",
-            "baseColor": "#0c2133"
+            "color": "#333333",
+            "baseColor": "#b6cbd3"
         },
         {
             "name": " A duty cycle of, say, 10 minutes on & 50 minutes off is possible and suggested for negative emissions (more CO2 removed than consumed by the air pump).",
-            "color": "#cccccc",
-            "baseColor": "#0f1a30"
+            "color": "#333333",
+            "baseColor": "#aec6cf"
         }
     ]
 }

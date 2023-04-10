@@ -61,6 +61,7 @@ set up .env file with DIR_PATH variable going to that io folder
 #DIR_PATH = os.path.join(os.getenv('DIR_PATH'), "input")
 EX1_PATH = os.path.join(os.getenv('DIR_PATH'), "examples\\OAGitHub")
 EX2_PATH = os.path.join(os.getenv('DIR_PATH'), "examples\\OAForum")
+EX3_PATH = os.path.join(os.getenv('DIR_PATH'), "examples\\txt")
 OUT_PATH = os.path.join(os.getenv('DIR_PATH'), "output")
 
 nlp = spacy.load('en_core_web_sm')
@@ -202,7 +203,7 @@ def activate_similarities(similarities:np.array, p_size=10)->np.array:
         activated_similarities = np.sum(diagonals, axis=0)
         return activated_similarities
   
-def gen_output(directory):
+def gen_output(directory, doctitle):
            
     # Loop through all files in the directory
     for root, dirs, files in os.walk(directory):
@@ -320,27 +321,37 @@ def gen_output(directory):
                 #print(similarities)
 
                 connections = []
+                added = []
                 for i in range(len(similarities)):
                     p_start = i
                     row = np.array(similarities[i])
+                    print("orig row", row)
                     idx_one = np.argmax(row)
+                    print("idx one", idx_one)
                     decision_row = np.delete(row, idx_one)
-                    #print(decision_row)
+                    print("dec row", decision_row)
                     idx_max = np.argmax(decision_row)
-                    #print(idx_max)
-                    if idx_one == idx_max:
-                        p_end = idx_max + 1
-                    else:
+                    print("idx max", idx_max)
+                    if idx_max < idx_one:
                         p_end = idx_max
+                    else:
+                        p_end = idx_max + 1
                     #print(p_start, p_end)
-                    connections.append([p_start, p_end, titles[p_start], titles[p_end], paragraphs[p_start], paragraphs[p_end] ])
+                    points = [p_start, p_end]
+                    to_add = str(min(points)) + "_" + str(max(points))
+                    if to_add not in added:
+                        connection = [p_start, p_end, titles[p_start], titles[p_end], paragraphs[p_start], paragraphs[p_end] ]
+                    #print("connection", i, p_start, p_end)
+                    #print("\n")
+                    #print("\n")
+                    connections.append(connection)
 
             
 
                 # Generate the diagram
-                print('==> OUTPUT:')
+                print('OUTPUTTING')
 
-                title = "OpenAccelerator Demo"
+                title = doctitle
                  
 
                 graphData = {}
@@ -352,12 +363,16 @@ def gen_output(directory):
                 zoneData = []
 
                 titleCount = len(titles)
-                palette = sns.color_palette("crest", titleCount)
+                palette = sns.light_palette('#AEC6CF', titleCount, input='rgb')
+
+                # Use the following for a darker palette
+                #palette = sns.color_palette("crest", titleCount)
+
                 color_dict = {}
                 for i in range(titleCount):
 
                     r, g, b = palette[i]
-                    color = '#%02x%02x%02x' % (int(r*100), int(g*100), int(b*100))
+                    color = '#%02x%02x%02x' % (int(r*255), int(g*255), int(b*255))
                     color_dict[titles[i]] = color
 
                     data_dict = { 
@@ -371,35 +386,52 @@ def gen_output(directory):
 
                     data_dict = {
                         "name": titles[i],
-                        "color": "#cccccc",
+                        "color": "#333333",
                         "baseColor": color
                     }
                     zoneData.append(data_dict)
                 
 
-                for i in range(len(connections)):
+                for i in range(0, len(connections)):
 
                     start, end, title_start, title_end, para_start, para_end = connections[i] 
+                    prev_start, prev_end, prev_title_start, prev_title_end, prev_para_start, prev_para_end = connections[i-1]
 
                     # nodes -------------------------------
-                    data_dict = { 
-                        "id": str(start), 
-                        "zone": color_dict[title_start], 
-                        "fname": title_start, 
-                        "parent": title_start,
-                        "info": para_start
-                    } 
-                    data_obj = {
-                        "data": data_dict
-                    }
-                    nodes.append(data_obj)
+                    if i > 0:
+                        data_dict = { 
+                            "id": str(start), 
+                            "zone": color_dict[title_start], 
+                            "fname": title_start, 
+                            "parent": prev_title_start,
+                            "info": para_start
+                        } 
+                        data_obj = {
+                            "data": data_dict
+                        }
+                        nodes.append(data_obj)
+                    else:
+                        data_dict = { 
+                            "id": str(start), 
+                            "zone": color_dict[title_start], 
+                            "fname": title_start, 
+                            "parent": '',
+                            "info": para_start
+                        } 
+                        data_obj = {
+                            "data": data_dict
+                        }
+                        nodes.append(data_obj)
 
                     # edges and steps -------------------------------
+
+                    points = [start, end]
+                    prev_points = [prev_start, prev_end]
                     if i > 0:
                         data_dict = { 
                             "id": "edge"+str(i), 
-                            "source": str(end), 
-                            "target": str(start)
+                            "source": str(min(points)), 
+                            "target": str(max(points))
                         } 
                         data_obj = {
                             "data": data_dict
@@ -410,8 +442,8 @@ def gen_output(directory):
                             "id": str(i),
                             "type": "single",
                             "nodes": [
-                                str(end),
-                                str(start)
+                                str(min(points)),
+                                str(max(points))
                             ],
                             "steps": [],
                             "description": para_start
@@ -419,8 +451,8 @@ def gen_output(directory):
                     else:
                         data_dict = { 
                             "id": "edge"+str(i), 
-                            "source": str(end), 
-                            "target": str(start)
+                            "source": str(min(prev_points)), 
+                            "target": str(max(prev_points))
                         } 
                         data_obj = {
                             "data": data_dict
@@ -431,11 +463,13 @@ def gen_output(directory):
                             "id": str(i),
                             "type": "single",
                             "nodes": [
-                                str(start)
+                                str(min(prev_points)),
+                                str(max(prev_points))
                             ],
                             "steps": [],
-                            "description": para_start
+                            "description": prev_para_start
                         }
+
                     stepData.append(data_dict)
 
 
@@ -472,11 +506,13 @@ def gen_output(directory):
        
 #gen_output(DIR_PATH)
 
-in_url = 'https://github.com/openair-collective/openair-cyan'
-get_input(in_url, EX1_PATH)
-gen_output(EX1_PATH)
+gen_output(EX3_PATH, "OSHW and MBSE for Academic Leadership in Sustainability")
 
-in_url = 'https://www.openairforum.org/c/rnd/16.rss' #'https://www.hackster.io/mike-bwondera-duncan-kariuki/thursday-open-source-direct-air-capture-1faba8'
-get_input(in_url, EX2_PATH)
-gen_output(EX2_PATH)
+#in_url = 'https://github.com/openair-collective/openair-cyan'
+#get_input(in_url, EX1_PATH)
+#gen_output(EX1_PATH, "OpenAccelerator Demo - OpenAir Cyan")
+
+#in_url = 'https://www.openairforum.org/c/rnd/16.rss' #'https://www.hackster.io/mike-bwondera-duncan-kariuki/thursday-open-source-direct-air-capture-1faba8'
+#get_input(in_url, EX2_PATH)
+#gen_output(EX2_PATH, "OpenAccelerator Demo - OpenAir Thursday")
 

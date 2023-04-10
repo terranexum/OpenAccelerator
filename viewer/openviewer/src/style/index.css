@@ -3,15 +3,14 @@ html, body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	background: rgb(31, 32, 40);
-	background-image: url("../assets/app_bg.jpg");
+	background: rgb(255, 255, 255);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 
 	font-family: 'Helvetica Neue', arial, sans-serif;
 	font-weight: 400;
-	color: #c3c3c3;
+	color: #333333;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -27,7 +26,7 @@ h1, h2, h3, h4, h5 {
 }
 
 a {
-	color: #666666;
+	color: #0058aa;
 	text-decoration: none;
 }
 
@@ -121,7 +120,7 @@ button {
 }
 
 .right-panel {
-	background-color: rgb(39, 41, 53);
+	background-color: rgb(255, 255, 255);
 	border-radius: 40px;
 }
 
@@ -135,7 +134,7 @@ button {
 }
 
 .unrelated-step-toc {
-	color: #ccc;
+	color: #333;
 }
 
 .iframe-list-style {
